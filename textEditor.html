@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center">Text Editor</h1>
+    <div class="row">
+        <div class="col-lg-12 my-4 mx-5">
+            <button id="bold" type="button" class="btn btn-info px-5"><b>Bold</b></button>
+            <button id="italic" type="button" class="btn btn-info px-5"><em>Italic</em></button>
+            <button id="underline" type="button" class="btn btn-info px-5"><u>Underline</u></button>
+            <button id="color" type="button" class="btn btn-info px-5">
+                Color <input type="color" id="myColor">
+            </button>
+            <button onclick="textAlignFun(this,'left')" type="button" class="btn btn-info px-5 textAlign">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24"
+                     viewBox="0 0 172 172"
+                     style=" fill:#000000;">
+                    <g fill="none" fill-rule="nonzero" stroke="none"
+                       stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+                       stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                       font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                       style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none">
+                    </path><g fill="#ffffff"><path d="M0,7.16667v14.33333h172v-14.33333zM0,43v14.33333h114.66667v-14.33333zM0,78.83333v14.33333h172v-14.33333zM0,114.66667v14.33333h114.66667v-14.33333zM0,150.5v14.33333h172v-14.33333z"></path></g></g></svg>
+            </button>
+            <button onclick="textAlignFun(this,'center')" type="button" class="btn btn-info px-5 textAlign">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                     width="24" height="24"
+                     viewBox="0 0 172 172"
+                     style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M0,7.16667v14.33333h172v-14.33333zM28.66667,43v14.33333h114.66667v-14.33333zM0,78.83333v14.33333h172v-14.33333zM28.66667,114.66667v14.33333h114.66667v-14.33333zM0,150.5v14.33333h172v-14.33333z"></path></g></g></svg>
+            </button>
+            <button onclick="textAlignFun(this,'right')" type="button" class="btn btn-info px-5 textAlign">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                     width="26" height="26"
+                     viewBox="0 0 172 172"
+                     style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M0,13.23077v13.23077h172v-13.23077zM52.92308,46.30769v13.23077h119.07692v-13.23077zM0,79.38462v13.23077h172v-13.23077zM52.92308,112.46154v13.23077h119.07692v-13.23077zM0,145.53846v13.23077h172v-13.23077z"></path></g></g></svg>
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <label for="textInput">
+            <textarea name="" id="textInput" cols="70" rows="20"></textarea>
+            </label>
+        </div>
+        <div id="textOutput" class="col-lg-6 border"></div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.col-lg-6{
+    height: 485px;
+}
+.bold{
+    font-weight: bold;
+}
+.italic{
+    font-style: italic;
+}
+.underline{
+    text-decoration: underline;
+}
